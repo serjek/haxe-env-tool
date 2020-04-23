@@ -1,10 +1,10 @@
 # haxe-env-tool
 Helper tool to work with environment variables
 
-###What it does
+### What it does
 This tool might become useful if you're not a fan of messing with env vars on our dev machine and want to rather mock them in you code. While keeping your dev variables in code you can also replace them with env variables at runtime without even changing syntax.
 
-###How to use
+### How to use
 Imagine you have a config with your network params primed for local testing
 
 ```haxe
@@ -28,9 +28,9 @@ Now you can provide `environment` in your docker-compose like this:
 
 ```yml
 environment:
-	- DATABASE_HOST=prod_database
+    - DATABASE_HOST=prod_database
 ```
 Note that variables that were not set though env will remain unchanged as they specified.
 
-###Dependencies
+### Dependencies
 [tink_macro](https://github.com/haxetink/tink_macro)
