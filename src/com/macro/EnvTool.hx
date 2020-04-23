@@ -28,7 +28,7 @@ class EnvTool
 
 			var expr = if (mvar.type == "Int") 
 					macro Sys.getEnv($v{PROP}) != null 
-						? $v{Std.parseInt(Sys.getEnv($v{PROP}))}
+						? Std.parseInt(Sys.getEnv($v{PROP}))
 						: $e{mvar.expr}
 				else 
 					macro Sys.getEnv($v{PROP}) != null 

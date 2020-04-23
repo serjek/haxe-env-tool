@@ -11,7 +11,7 @@ Imagine you have a config with your network params primed for local testing
 class Config
 {
 	public static final DATABASE_HOST:String = "localhost";
-	public static final DATABASE_PORT:String = "3306";
+	public static final DATABASE_PORT:Int = 3306;
 	public static final DATABASE_NAME:String = "my_database";
 }
 ```
@@ -23,7 +23,7 @@ And you want to use it in same way but with environmental variables. Just add bu
 class Config
 {
 	public static final DATABASE_HOST:String = "localhost";
-	public static final DATABASE_PORT:String = "3306";
+	public static final DATABASE_PORT:Int = 3306;
 	public static final DATABASE_NAME:String = "my_database";
 }
 
